@@ -1,0 +1,37 @@
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  /* margin-bottom: 10px; */
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.button {
+  display: block;
+  width: 90%;
+  /* width: calc(300px - 5px); */
+  height: 20px;
+  /* background: #4e9caf; */
+  padding: 10px;
+  /* text-align: center; */
+  border-radius: 5px;
+  /* color: white; */
+  /* font-weight: bold; */
+  line-height: 25px;
+
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.button:hover {
+  background-color: rgb(213, 213, 213);
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+.first-upper {
+  text-transform: capitalize;
+}

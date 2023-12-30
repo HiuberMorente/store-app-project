@@ -1,0 +1,11 @@
+<ul>
+    <!-- <li *ngFor="let category of categories">{{ category }}</li> -->
+    <li><a href="#" class="button" (click)="onCategorySelected('')">All</a></li>
+    <!-- @for (category of categories; track categories) {
+    <li> <a href="#" class="button first-upper" (click)="onCategorySelected(category.category)">{{category}}</a></li>
+    } -->
+
+    <li *ngFor="let category of categories">
+        <a href="#" class="button first-upper" (click)="onCategorySelected(category)">{{ category }}</a>
+    </li>
+</ul>

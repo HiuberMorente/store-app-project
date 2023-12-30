@@ -1,0 +1,27 @@
+<header>
+    <h1 class="title-center">{{category}}</h1>
+</header>
+
+<div class="container">
+
+    @for (product of products; track product.id) {
+
+    <mat-card class="mat-card">
+        <img class="product-image" mat-card-image [src]="product.image" alt="product image">
+        <mat-card-header>
+            <mat-card-title>
+                <h3> {{ product.title }} </h3>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <!-- <p><strong>Category:</strong> {{ product.category }}</p> -->
+            <!-- <p><strong>Description:</strong> {{ product.description }}</p> -->
+            <p><strong>Price:</strong> {{ product.price }} </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="btn-center" mat-button>DETAILS</button>
+        </mat-card-actions>
+    </mat-card>
+    }
+
+</div>
